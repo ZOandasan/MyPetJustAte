@@ -49,6 +49,7 @@ export default class SignUpForm extends Component {
     return (
       <div>
         <div className="form-container">
+          <h1>Sign Up</h1>
           <form autoComplete="off" onSubmit={this.handleSubmit}>
             <label>Name</label>
             <input type="text" name="name" value={this.state.name} onChange={this.handleChange} required />

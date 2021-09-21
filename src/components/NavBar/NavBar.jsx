@@ -9,8 +9,6 @@ export default function NavBar(props) {
         props.setUser(null);
     }
 
-    
-
     return (
     <nav>
         <Link to="/home"><button>Home</button></Link>
