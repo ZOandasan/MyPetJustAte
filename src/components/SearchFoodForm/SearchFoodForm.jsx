@@ -8,10 +8,6 @@ export default function SearchFoodForm(){
     });
     const [foundFoods, setFoundFoods] = useState();
 
-    function handlePetChange (evt){
-        //Definately Changes the text of the Pet.
-    }
-
     function handleChange (evt){
         setFormData({
           ...formData,
