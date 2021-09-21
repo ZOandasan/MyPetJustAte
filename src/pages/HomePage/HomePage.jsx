@@ -1,10 +1,10 @@
 import { useState } from 'react';
+import SearchFoodForm from '../../components/SearchFoodForm/SearchFoodForm';
 
 export default function HomePage(){
     return (
         <>
-            <h1>Home Page</h1>
-            
+            <SearchFoodForm />
         </>
     )
 }
