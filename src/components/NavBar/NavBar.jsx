@@ -9,13 +9,14 @@ export default function NavBar(props) {
         props.setUser(null);
     }
 
+    
+
     return (
     <nav>
-        <Link to="/orders">Order History</Link>
-        &nbsp; | &nbsp;
-        <Link to="/orders/new">New Order</Link>
-        &nbsp;&nbsp;<span>Welcome, {props.user.name}</span>
-        &nbsp;&nbsp;<Link to="" onClick={handleLogOut}>Log Out</Link>
+        <Link to="/home">Home</Link>
+        &nbsp;&nbsp;
+        <Link to="/about">About</Link>
+        &nbsp;&nbsp;
     </nav>
     );
 }
