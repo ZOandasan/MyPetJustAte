@@ -1,9 +1,19 @@
-### To Use This:
+# My Pet Just Ate App
 
-1) Clone the mern-infrastructure repo.
-2) Rename the newly mern-infrastructure folder to the name of your new project.
-3) Optionally, update the "name": "mern-infrastructure" in package.json.
-4) Create a new repo on your personal GH account.
-5) Copy the GH repo's URL.
-6) Update the remote's URL: git remote set-url origin <paste the copied url>
-7) Push for the first time: git push -u origin main
+### Site Functionality:
+
+### Link to Site:
+https://mypetjustate.herokuapp.com/home
+
+### Technologies Used:
+
+### Planning Resources:
+
+### Next Steps:
+<ul>
+    <li>User inputs in a food, selecting ingredients programmed in. This will allow the food to be classified as safe or unsafe based on if all the ingredients are safe to eat.</li>
+</ul>
+
+### ERD:
+
+### Screenshots:
