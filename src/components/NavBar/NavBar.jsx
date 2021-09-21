@@ -16,6 +16,8 @@ export default function NavBar(props) {
         <Link to="/about"><button>About</button></Link>
         <span> </span>
         <Link to="/settings"><button>Settings</button></Link>
+        <span> </span>
+        <Link to="/sign-in"><button>Sign In</button></Link>
     </nav>
     );
 }

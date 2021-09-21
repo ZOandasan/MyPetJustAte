@@ -2,11 +2,11 @@ import { useState } from 'react';
 import { Redirect, Route, Switch } from 'react-router-dom';
 import './App.css';
 import { getUser } from '../../utilities/users-service';
-import AuthPage from '../AuthPage/AuthPage';
 import NavBar from '../../components/NavBar/NavBar';
 import HomePage from '../HomePage/HomePage';
 import AboutPage from '../AboutPage/AboutPage';
 import SettingsPage from '../SettingsPage/SettingsPage';
+import SignInPage from '../SignInPage/SignInPage';
 
 export default function App() {
   const [user, setUser] = useState(getUser());
@@ -18,6 +18,9 @@ export default function App() {
           <Switch>
             <Route path="/home">
               <HomePage />
+            </Route>
+            <Route path="/sign-in">
+              <SignInPage />
             </Route>
             <Route path="/about">
               <AboutPage />
