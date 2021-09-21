@@ -7,13 +7,14 @@ The goal of the application was to create a site where people could input a food
 https://mypetjustate.herokuapp.com/home
 
 ### Technologies Used:
-
-### Planning Resources:
+HTML, CSS, Javascript, MongoDB, Mongoose, Express, React.js, Node.js, GitHub, Heroku
 
 ### Next Steps:
 <ul>
     <li>User inputs in a food, selecting ingredients programmed in. This will allow the food to be classified as safe or unsafe based on if all the ingredients are safe to eat.</li>
 </ul>
+
+### Planning Resources:
 
 ### ERD:
 
