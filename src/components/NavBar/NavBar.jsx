@@ -13,11 +13,11 @@ export default function NavBar(props) {
 
     return (
     <nav>
-        <Link to="/home">Home</Link>
-        <span> | </span>
-        <Link to="/about">About</Link>
-        <span> | </span>
-        <Link to="/settings">Settings</Link>
+        <Link to="/home"><button>Home</button></Link>
+        <span> </span>
+        <Link to="/about"><button>About</button></Link>
+        <span> </span>
+        <Link to="/settings"><button>Settings</button></Link>
     </nav>
     );
 }
