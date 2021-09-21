@@ -8,6 +8,7 @@ import AboutPage from '../AboutPage/AboutPage';
 import SettingsPage from '../SettingsPage/SettingsPage';
 import SignInPage from '../SignInPage/SignInPage';
 import EmergencyButton from '../../components/EmergencyButton/EmergencyButton';
+import EmergencyPage from '../EmergencyPage/EmergencyPage';
 
 export default function App() {
   const [user, setUser] = useState(getUser());
@@ -29,6 +30,9 @@ export default function App() {
             </Route>
             <Route path="/settings">
               <SettingsPage />
+            </Route>
+            <Route path="/emergency">
+              <EmergencyPage />
             </Route>
             <Redirect to="/home" />
           </Switch>

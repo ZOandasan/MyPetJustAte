@@ -1,7 +1,11 @@
+import { Link } from "react-router-dom"
+
 export default function EmergencyButton(){
+
+
     return (
         <>
-            <a href="https://google.com"><button className="emergency">Emergency</button></a>
+            <Link to="/emergency"><button className="emergency">Emergency</button></Link>
         </>
     )
 }
