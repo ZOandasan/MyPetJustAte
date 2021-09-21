@@ -20,7 +20,7 @@ export default function App() {
               <HomePage />
             </Route>
             <Route path="/sign-in">
-              <SignInPage />
+              <SignInPage user={user} setUser={setUser}/>
             </Route>
             <Route path="/about">
               <AboutPage />
