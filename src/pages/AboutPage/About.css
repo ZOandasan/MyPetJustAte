@@ -1,0 +1,47 @@
+.about {
+    background-color: var(--background-card);
+    border: .3vmin solid var(--border);
+    border-radius: 5%;
+    margin: 5vmin
+}
+    
+.about-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--background-form);
+    margin: 5vmin;
+    border: .1vmin solid var(--border);
+    border-radius: 3%;
+}
+    
+h1 {
+    text-align: center;
+}
+    
+.about-container > p {
+    font-size: 2vmin;
+    padding: 2vmin;
+}
+    
+table {
+    margin: 5vmin;
+    background-color: var(--background-card);
+    padding: 10vmin;
+    border: .1vmin solid var(--border);
+    border-radius: 3%;
+}
+    
+th {
+    text-decoration: underline;
+}
+    
+.name {
+    font-size: 2vmin
+}
+    
+.img {
+    height: 2vmin;
+    width: 2vmin;  
+}
+    
