@@ -6,6 +6,7 @@ import AuthPage from '../AuthPage/AuthPage';
 import NavBar from '../../components/NavBar/NavBar';
 import HomePage from '../HomePage/HomePage';
 import AboutPage from '../AboutPage/AboutPage';
+import SettingsPage from '../SettingsPage/SettingsPage';
 
 export default function App() {
   const [user, setUser] = useState(getUser());
@@ -20,6 +21,9 @@ export default function App() {
             </Route>
             <Route path="/about">
               <AboutPage />
+            </Route>
+            <Route path="/settings">
+              <SettingsPage />
             </Route>
             <Redirect to="/home" />
           </Switch>

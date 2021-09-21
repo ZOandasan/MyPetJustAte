@@ -14,9 +14,10 @@ export default function NavBar(props) {
     return (
     <nav>
         <Link to="/home">Home</Link>
-        &nbsp;&nbsp;
+        <span> | </span>
         <Link to="/about">About</Link>
-        &nbsp;&nbsp;
+        <span> | </span>
+        <Link to="/settings">Settings</Link>
     </nav>
     );
 }
