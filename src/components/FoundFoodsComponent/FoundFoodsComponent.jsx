@@ -1,17 +1,18 @@
-export default function FoundFoodsCompoent({food}){
-    if (food.safe) {
-        return (
-            <>
-                <h1>{food.name}</h1>
-                <h4>Safe to Eat</h4>
-            </>
-        )
-    } else {
-        return (
-            <>
-                <h1>{food.name}</h1>
-                <h4>Do Not Eat</h4>
-            </>
-        )
+import FoodCard from "../FoodCard/FoodCard";
+
+export default function FoundFoodsCompoent({foundFoods}){
+    const initCards = [];
+    for (let idx = 0; foundFoods.length > idx; ++idx){
+        initCards.push(
+            <FoodCard food={foundFoods[idx]} key={idx}/>
+        );
     }
+
+    return (
+        <>
+            {initCards.map((c, idx) => (
+                <>{c}</>
+            ))}
+        </>
+    );
 }
