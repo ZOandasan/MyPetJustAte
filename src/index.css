@@ -10,7 +10,7 @@
 	--link: rgb(50, 0, 100);
   --link-visited: rgb(100, 0 50);
 	--border: rgb(0, 0, 0);
-	--error: red;
+	--error: rgb(180, 0, 0);
 }
 
 *, *:before, *:after {
@@ -27,6 +27,14 @@ body {
   background-color: var(--background);
   padding: 2vmin;
   height: 100vh;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  background-color: var(--background-2);
+  width: 100%;
+  text-align: center;
 }
 
 code {
@@ -173,4 +181,10 @@ a {
 
 a:visited {
   color: var(--link-visited);
+}
+
+.emergency {
+  background-color: var(--error);
+  color: white;
+  font-size: 5vmin;
 }
