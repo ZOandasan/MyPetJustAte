@@ -7,11 +7,13 @@ import HomePage from '../HomePage/HomePage';
 import AboutPage from '../AboutPage/AboutPage';
 import SettingsPage from '../SettingsPage/SettingsPage';
 import SignInPage from '../SignInPage/SignInPage';
+import EmergencyButton from '../../components/EmergencyButton/EmergencyButton';
 
 export default function App() {
   const [user, setUser] = useState(getUser());
 
   return (
+    <>
     <main className="App">
         <>
           <NavBar user={user} setUser={setUser} />
@@ -32,5 +34,9 @@ export default function App() {
           </Switch>
         </> 
     </main>
+    <footer>
+      <EmergencyButton />
+    </footer>
+    </>
   );
 }
