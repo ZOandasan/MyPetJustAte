@@ -23,7 +23,87 @@ export default function AboutPage(){
             </tr>
           </thead>
           <tbody>
+
+            <tr>
+              <td className="name">Carlos Shows</td>
+              <br />&nbsp;&nbsp;&nbsp;
+              <td>
+                <a href="https://www.linkedin.com/in/carlos-shows/">
+                  <img className="img"
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/LinkedIn_logo_initials.png/600px-LinkedIn_logo_initials.png"
+                    alt="linkedin"
+                  ></img>
+                </a>
+              </td>
+              <br />&nbsp;&nbsp;&nbsp;&nbsp;
+              <td>Content Strategist / UX Designer</td>
+              <br />
+            </tr>
             
+            <tr>
+              <td className="name">Jimmy Liu</td>
+              <br />&nbsp;&nbsp;&nbsp;
+              <td>
+                <a href="https://www.linkedin.com/in/jimmy-liu-a9169310/">
+                  <img className="img"
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/LinkedIn_logo_initials.png/600px-LinkedIn_logo_initials.png"
+                    alt="linkedin"
+                  ></img>
+                </a>
+              </td>
+              <br />&nbsp;&nbsp;&nbsp;&nbsp;
+              <td>Content Strategist / UX Designer</td>
+              <br />
+            </tr>
+
+            <tr>
+              <td className="name">Josiah Wu</td>
+              <br />&nbsp;&nbsp;&nbsp;
+              <td>
+                <a href="https://www.linkedin.com/in/josiahwu/">
+                  <img className="img"
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/LinkedIn_logo_initials.png/600px-LinkedIn_logo_initials.png"
+                    alt="linkedin"
+                  ></img>
+                </a>
+              </td>
+              <br />&nbsp;&nbsp;&nbsp;&nbsp;
+              <td>Content Strategist / UX Designer</td>
+              <br />
+            </tr>
+            
+            <tr>
+              <td className="name">Natalie McCook</td>
+              <br />&nbsp;&nbsp;&nbsp;
+              <td>
+                <a href="https://www.linkedin.com/in/zachary-oandasan/">{/* Update this Link */}
+                  <img className="img"
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/LinkedIn_logo_initials.png/600px-LinkedIn_logo_initials.png"
+                    alt="linkedin"
+                  ></img>
+                </a>
+              </td>
+              <br />&nbsp;&nbsp;&nbsp;&nbsp;
+              <td>Full Stack Developer</td>
+              <br />
+            </tr>
+
+            <tr>
+              <td className="name">Rei Pagdilao</td>
+              <br />&nbsp;&nbsp;&nbsp;
+              <td>
+                <a href="https://www.linkedin.com/in/zachary-oandasan/">{/* Update this Link */}
+                  <img className="img"
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/LinkedIn_logo_initials.png/600px-LinkedIn_logo_initials.png"
+                    alt="linkedin"
+                  ></img>
+                </a>
+              </td>
+              <br />&nbsp;&nbsp;&nbsp;&nbsp;
+              <td>Full Stack Developer</td>
+              <br />
+            </tr>
+
             <tr>
               <td className="name">Zachary Oandasan</td>
               <br />&nbsp;&nbsp;&nbsp;
