@@ -1,10 +1,11 @@
 import React, { useRef, useEffect, useState } from 'react'
-import mapboxgl from 'mapbox-gl';
+//import mapboxgl from 'mapbox-gl';
 require('dotenv').config();
 
-mapboxgl.accessToken = "pk.eyJ1IjoicmVpYnAiLCJhIjoiY2twbjRkNmtrMDUzaDJubGZpd2V2czlmdyJ9.CbflU85ZELStxRiiE_bW-A"
+//mapboxgl.accessToken = "pk.eyJ1IjoicmVpYnAiLCJhIjoiY2twbjRkNmtrMDUzaDJubGZpd2V2czlmdyJ9.CbflU85ZELStxRiiE_bW-A"
 
 export default function EmergencyPage(){
+/*
 
     const mapContainer = useRef(null)
     const map = useRef(null)
@@ -27,4 +28,10 @@ export default function EmergencyPage(){
             <div ref={mapContainer} className="map-container" />
         </>
     )
+    */
+   return (
+   <>
+    <div></div>
+   </>
+   );
 }
