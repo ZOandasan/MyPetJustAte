@@ -1,5 +1,5 @@
 export default function FoodCard({food, index}){
-    if (index < 6){
+    if (index < 1){
         if (food.safe) {
             return (
                 <div className="food-card">

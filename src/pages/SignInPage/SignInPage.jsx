@@ -1,10 +1,16 @@
-
+import { Link } from "react-router-dom";
 import { useState } from 'react';
+import * as userService from '../../utilities/users-service';
 import SignUpForm from '../../components/SignUpForm/SignUpForm';
 import LoginForm from '../../components/LoginForm/LoginForm';
 
 export default function SignInPage({user, setUser}){
     const [showLogin, setShowLogin] = useState(true);
+
+    function handleLogOut() {
+        userService.logOut();
+        setUser(null);
+    }
 
     if (user){
         return (
@@ -13,17 +19,17 @@ export default function SignInPage({user, setUser}){
                 <h4>You're Signed In As</h4>
                 <p>{user.name}</p>
                 <p>{user.email}</p>
-                {/* Logout */}
+                <button onClick= {() => handleLogOut()}>Log Out</button>
                 <div>
-                    {/* Logout */}
+                    <Link to="/about"><button>Admin Portal Link</button></Link>
                 </div>
             </div>
         )
     } else {
         return (
             <main>
-                <button onClick={() => setShowLogin(!showLogin)}>{showLogin ? 'Sign Up': 'Log In'}</button>
                 {showLogin ? <LoginForm setUser={setUser} /> : <SignUpForm setUser={setUser} />}
+                <button onClick={() => setShowLogin(!showLogin)}>{showLogin ? 'Sign Up': 'Log In'}</button>
             </main>
         )
     }
