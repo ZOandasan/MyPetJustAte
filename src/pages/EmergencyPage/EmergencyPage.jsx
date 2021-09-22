@@ -31,7 +31,6 @@ export default function EmergencyPage() {
     []
   );
 
-
   return (
     <div className='map-container'>
         <p>If you believe that your beloved furbaby has ate something toxic, please go to nearest animal hospital near you.</p>
