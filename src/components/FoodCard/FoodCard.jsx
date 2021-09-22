@@ -9,7 +9,7 @@ export default function FoodCard({food, index}){
             )
         } else {
             return (
-                <div>
+                <div className="food-card">
                     <h1>{food.name}</h1>
                     <h4>Do Not Eat</h4>
                 </div>
