@@ -1,5 +1,6 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import FoundFoodsCompoent from '../FoundFoodsComponent/FoundFoodsComponent';
+import * as ingredientsAPI from '../../utilities/ingredients-api';
 
 export default function SearchFoodForm(){
     const [formData, setFormData] = useState({
@@ -7,6 +8,16 @@ export default function SearchFoodForm(){
         food: '',
     });
     const [foundFoods, setFoundFoods] = useState();
+    
+    useEffect(function(){
+        async function getIngredients() {
+            const ingredients = await ingredientsAPI.getAll();
+            console.log(ingredients.length);
+            setFoundFoods(ingredients);
+        }
+        getIngredients();
+    }, []);
+
 
     function handleChange (evt){
         setFormData({
@@ -16,7 +27,6 @@ export default function SearchFoodForm(){
     };
 
     function handleSubmit (evt){
-        //Pull all of the Ingredients.
         //Use .filter method to get all ingredients that include the letters provided.
         //Assign the array of remaining ingredients to foundFoods.
         //Use the .Map to push out a card for every element of foundFoods.

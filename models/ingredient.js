@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
-const citationSchema = newSchema ({
+const citationSchema = new Schema ({
     citationName: {
         type: String,
         required: true,
