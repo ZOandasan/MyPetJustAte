@@ -1,5 +1,6 @@
 require('dotenv').config();
 require('./config/database');
+//Connect To the Seed
 
 const Ingredient = require('./models/ingredient');
 

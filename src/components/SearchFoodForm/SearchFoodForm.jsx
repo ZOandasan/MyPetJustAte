@@ -12,7 +12,7 @@ export default function SearchFoodForm(){
     useEffect(function(){
         async function getIngredients() {
             const ingredients = await ingredientsAPI.getAll();
-            console.log(ingredients.length);
+            console.log(ingredients);
             setFoundFoods(ingredients);
         }
         getIngredients();

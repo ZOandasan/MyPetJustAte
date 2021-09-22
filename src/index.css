@@ -188,3 +188,9 @@ a:visited {
   color: white;
   font-size: 5vmin;
 }
+
+.food-card {
+  background-color: var(--background-card);
+  border: .1vmin solid var(--border);
+  border-radius: 5vmin;
+}
