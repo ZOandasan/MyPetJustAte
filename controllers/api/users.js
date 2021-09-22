@@ -7,6 +7,7 @@ module.exports = {
   login,
   checkToken,
   makeAdmin
+  
 };
 
 function checkToken(req, res) {
