@@ -13,6 +13,7 @@ import AdminPortalPage from '../AdminPortalPage/AdminPortalPage';
 
 export default function App() {
   const [user, setUser] = useState(getUser());
+  const [navMenu, setNavMenu] = useState(-1);
 
   return (
     <>
