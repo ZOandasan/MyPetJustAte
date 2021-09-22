@@ -36,7 +36,7 @@ export default function App() {
               <EmergencyPage />
             </Route>
             <Route path="/admin">
-              <AdminPortalPage />
+              <AdminPortalPage user={user}/>
             </Route>
             <Redirect to="/home" />
           </Switch>

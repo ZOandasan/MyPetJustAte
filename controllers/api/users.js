@@ -5,7 +5,8 @@ const bcrypt = require('bcrypt');
 module.exports = {
   create,
   login,
-  checkToken
+  checkToken,
+  makeAdmin
 };
 
 function checkToken(req, res) {
@@ -37,6 +38,18 @@ async function login(req, res) {
     res.json( createJWT(user) );
   } catch {
     res.status(400).json('Bad Credentials');
+  }
+}
+
+function makeAdmin(req, res){
+  if (!req.user.admin){
+    if (req.body.password === process.env.SECRET){
+      User.findByIdAndUpdate({_id: req.params.id }, { admin:true }, { new:true }, function(err, user){
+        res.redirect('/');
+    });
+    }
+  } else {
+    res.redirect('/');
   }
 }
 

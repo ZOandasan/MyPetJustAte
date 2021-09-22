@@ -21,7 +21,7 @@ export default function SignInPage({user, setUser}){
                 <p>{user.email}</p>
                 <button onClick= {() => handleLogOut()}>Log Out</button>
                 <div>
-                    <Link to="/about"><button>Admin Portal Link</button></Link>
+                    <Link to="/admin"><button>Admin Portal Link</button></Link>
                 </div>
             </div>
         )

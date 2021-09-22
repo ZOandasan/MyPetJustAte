@@ -17,7 +17,7 @@ export default function NavBar(props) {
         <span> </span>
         <Link to="/settings"><button>Settings</button></Link>
         <span> </span>
-        <Link to="/sign-in"><button>Sign In</button></Link>
+        <Link to="/sign-in"><button>Account</button></Link>
     </nav>
     );
 }
