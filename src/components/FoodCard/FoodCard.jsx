@@ -12,6 +12,12 @@ export default function FoodCard({food, index}){
                     <h4>{food.ingredientName}: Do Not Eat</h4>
                 </div>
             )
+        } else if (food.safeToEat === 'Maybe') {
+            return (
+                <div className="food-card">
+                    <h4>{food.ingredientName}: Maybe. Look at Sources for more Info.</h4>
+                </div>
+            )
         } else {
             return (
                 <div className="food-card">

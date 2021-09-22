@@ -27,6 +27,8 @@ const Ingredient = require('./models/ingredient');
         {ingredientName: 'Bananas', safeToEat: 'Yes', images: 'Filler', citations: [{citationName: 'https://www.rover.com/blog/can-my-dog-eat-that/' }, {citationName: 'https://fluentwoof.com/foods-dogs-cant-eat/'}]},
         {ingredientName: 'Raspberries', safeToEat: 'Yes', images: 'Filler', citations: [{citationName: 'https://www.rover.com/blog/can-my-dog-eat-that/' }, {citationName: 'https://fluentwoof.com/foods-dogs-cant-eat/'}]},
         {ingredientName: 'Pears', safeToEat: 'Yes', images: 'Filler', citations: [{citationName: 'https://www.rover.com/blog/can-my-dog-eat-that/' }, {citationName: 'https://fluentwoof.com/foods-dogs-cant-eat/'}]},
+        {ingredientName: 'Peaches', safeToEat: 'Maybe', images: 'Filler', citations: [{citationName: 'https://www.rover.com/blog/can-my-dog-eat-that/' }, {citationName: 'https://fluentwoof.com/foods-dogs-cant-eat/'}]},
+
     ]);
 
     process.exit();
