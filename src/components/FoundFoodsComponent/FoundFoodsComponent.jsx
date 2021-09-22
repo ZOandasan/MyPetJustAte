@@ -4,7 +4,7 @@ export default function FoundFoodsCompoent({foundFoods}){
     const initCards = [];
     if (foundFoods){
         for (let idx = 0; foundFoods.length > idx; ++idx){
-            console.log(foundFoods)
+            //console.log(foundFoods)
             initCards.push(
                 <FoodCard food={foundFoods[idx]} index={idx} key={idx}/>
             );
