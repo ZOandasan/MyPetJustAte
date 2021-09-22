@@ -13,6 +13,10 @@ export default function SignInPage({user, setUser}){
                 <h4>You're Signed In As</h4>
                 <p>{user.name}</p>
                 <p>{user.email}</p>
+                {/* Logout */}
+                <div>
+                    {/* Logout */}
+                </div>
             </div>
         )
     } else {

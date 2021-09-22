@@ -16,7 +16,7 @@ const ingredientSchema = new Schema ({
     safeToEat: {
         type: String,
         enum: ['Yes', 'No', 'Depends', 'Unknown'],
-        default: 'Unknown'
+        default: 'Unknown',
     },
     images: {
         type: String,
