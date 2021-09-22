@@ -27,10 +27,6 @@ export default function HomePage(){
         return (
             <>
                 <SearchFoodForm foundFoods={foundFoods} setFoundFoods={setFoundFoods} search={search} setSearch={setSearch}/>
-                <br />
-                <div>
-                    <FoundFoodsComponent foundFoods={foundFoods}/>
-                </div>
             </>
         )
     } else {
