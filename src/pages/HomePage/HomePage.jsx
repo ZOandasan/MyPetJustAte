@@ -10,7 +10,6 @@ export default function HomePage(){
     useEffect(function(){
         async function getIngredients() {
             const ingredients = await ingredientsAPI.getAll();
-            console.log(ingredients);
             setFoundFoods(ingredients);
         }
         getIngredients();

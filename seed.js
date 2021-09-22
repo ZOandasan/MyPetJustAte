@@ -29,8 +29,6 @@ const Ingredient = require('./models/ingredient');
         {ingredientName: 'Pears', safeToEat: 'Yes', images: 'Filler', citations: [{citationName: 'https://www.rover.com/blog/can-my-dog-eat-that/' }, {citationName: 'https://fluentwoof.com/foods-dogs-cant-eat/'}]},
     ]);
 
-    console.log(ingredients);
-
     process.exit();
 
 })();

@@ -22,11 +22,16 @@ export default function SearchFoodForm({foundFoods, setFoundFoods}){
                 let ingredient = i.ingredientName.toLowerCase();
                 let input = formData.food.toLowerCase();
                 if (ingredient === input) {
-                    matchedItems.push(i[idx]);
+                    matchedItems.push(i);
                 }
             });
         }
-        setFoundFoods(matchedItems);
+        if (matchedItems.length > 1){
+            setFoundFoods(matchedItems);
+        } else {
+            console.log("No Matches Found");
+            setFoundFoods();
+        }
         setFormData({
             pet: 'dog',
             food: '',
