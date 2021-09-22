@@ -1,3 +1,5 @@
+
+
 export default function FoodCard({food, index}){
     if (index < 1){
         if (food.safeToEat === 'Yes') {
@@ -20,9 +22,12 @@ export default function FoodCard({food, index}){
             )
         } else {
             return (
+                <>
                 <div className="food-card">
                     <h4>{food.ingredientName}: No Data Found</h4>
                 </div>
+                
+                </>
             )
         }
     } else {
