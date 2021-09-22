@@ -9,17 +9,18 @@ import SettingsPage from '../SettingsPage/SettingsPage';
 import SignInPage from '../SignInPage/SignInPage';
 import EmergencyButton from '../../components/EmergencyButton/EmergencyButton';
 import EmergencyPage from '../EmergencyPage/EmergencyPage';
-import AdminPortalPage from '../AdminPortalPage/AdminPortalPage';
+import NavPage from '../NavPage/NavPage';
 
 export default function App() {
   const [user, setUser] = useState(getUser());
-  const [navMenu, setNavMenu] = useState(-1);
+  const [navMenu, setNavMenu] = useState(true);
 
-  return (
+  return ( 
     <>
     <main className="App">
+      { navMenu ? 
         <>
-          <NavBar user={user} setUser={setUser} />
+          <NavBar setNavMenu={setNavMenu}/>
           <Switch>
             <Route path="/home">
               <HomePage />
@@ -36,12 +37,14 @@ export default function App() {
             <Route path="/emergency">
               <EmergencyPage />
             </Route>
-            <Route path="/admin">
-              <AdminPortalPage user={user}/>
-            </Route>
             <Redirect to="/home" />
           </Switch>
-        </> 
+        </>
+        :
+        <>
+          <NavPage setNavMenu={setNavMenu}/>
+        </>
+        } 
     </main>
     <footer>
       <EmergencyButton />
