@@ -11,8 +11,8 @@ const app = express();
 app.use(logger('dev'));
 app.use(express.json());
 // must be configured to serve from the build folder
-app.use(favicon(path.join(__dirname, 'build', 'favicon.ico')));
 app.use(express.static(path.join(__dirname, 'build')));
+app.use(favicon(path.join(__dirname, 'build', 'favicon.ico')));
 
 // Middleware to verify token and assign user object to req.user
 // Be sure to mount before routes

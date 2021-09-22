@@ -19,7 +19,6 @@ export default function EmergencyPage() {
     []
   );
 
-  // if you are happy with Geocoder default settings, you can just use handleViewportChange directly
   const handleGeocoderViewportChange = useCallback(
     (newViewport) => {
       const geocoderDefaultOverrides = { transitionDuration: 1000 };
@@ -50,7 +49,7 @@ export default function EmergencyPage() {
           onViewportChange={handleGeocoderViewportChange}
           mapboxApiAccessToken={MAPBOX_TOKEN}
           position="top-left"
-          limit={10}
+          limit={7}
           inputValue='animal hospital'
         />
       </MapGL>
