@@ -1,37 +1,60 @@
-import React, { useRef, useEffect, useState } from 'react'
-//import mapboxgl from 'mapbox-gl';
-require('dotenv').config();
+import 'mapbox-gl/dist/mapbox-gl.css'
+import 'react-map-gl-geocoder/dist/mapbox-gl-geocoder.css'
+import './Emergency.css'
+import React, { useState, useRef, useCallback } from 'react'
+import MapGL from 'react-map-gl'
+import Geocoder from 'react-map-gl-geocoder'
 
-//mapboxgl.accessToken = "pk.eyJ1IjoicmVpYnAiLCJhIjoiY2twbjRkNmtrMDUzaDJubGZpd2V2czlmdyJ9.CbflU85ZELStxRiiE_bW-A"
+const MAPBOX_TOKEN = "pk.eyJ1IjoicmVpYnAiLCJhIjoiY2twbjRkNmtrMDUzaDJubGZpd2V2czlmdyJ9.CbflU85ZELStxRiiE_bW-A"
 
-export default function EmergencyPage(){
-/*
+export default function EmergencyPage() {
+  const [viewport, setViewport] = useState({
+    latitude: 40.7128,
+    longitude: -74.0060,
+    zoom: 8
+  });
+  const mapRef = useRef();
+  const handleViewportChange = useCallback(
+    (newViewport) => setViewport(newViewport),
+    []
+  );
 
-    const mapContainer = useRef(null)
-    const map = useRef(null)
-    const [lng, setLng] = useState(-70.9)
-    const [lat, setLat] = useState(42.35)
-    const [zoom, setZoom] = useState(9)
+  // if you are happy with Geocoder default settings, you can just use handleViewportChange directly
+  const handleGeocoderViewportChange = useCallback(
+    (newViewport) => {
+      const geocoderDefaultOverrides = { transitionDuration: 1000 };
 
-    useEffect(() => {
-        if (map.current) return; // initialize map only once
-        map.current = new mapboxgl.Map({
-            container: mapContainer.current,
-            style: 'mapbox://styles/mapbox/streets-v11',
-            center: [lng, lat],
-            zoom: zoom
-            })
-        })
+      return handleViewportChange({
+        ...newViewport,
+        ...geocoderDefaultOverrides
+      });
+    },
+    []
+  );
 
-    return (
-        <>
-            <div ref={mapContainer} className="map-container" />
-        </>
-    )
-    */
-   return (
-   <>
-    <div></div>
-   </>
-   );
-}
+
+  return (
+    <div className='map-container'>
+        <p>If you believe that your beloved furbaby has ate something toxic, please go to nearest animal hospital near you.</p>
+      <MapGL
+        ref={mapRef}
+        {...viewport}
+        mapStyle='mapbox://styles/mapbox/streets-v11'
+        width="100%"
+        height="100%"
+        onViewportChange={handleViewportChange}
+        mapboxApiAccessToken={MAPBOX_TOKEN}
+      >
+        <Geocoder
+          mapRef={mapRef}
+          onViewportChange={handleGeocoderViewportChange}
+          mapboxApiAccessToken={MAPBOX_TOKEN}
+          position="top-left"
+          limit={10}
+          inputValue='animal hospital'
+        />
+      </MapGL>
+    </div>
+  );
+};
+
