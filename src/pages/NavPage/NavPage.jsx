@@ -2,6 +2,10 @@ import { Link } from "react-router-dom";
 
 export default function NavPage({setNavMenu}){
     return (
+        <>
+        <nav>
+            <button onClick={() => setNavMenu(true)}>X</button>
+        </nav>
         <div>
             <Link to="/home"><h2 onClick={() => setNavMenu(true)}>Home</h2></Link>
             <br />
@@ -9,5 +13,6 @@ export default function NavPage({setNavMenu}){
             <br />
             <Link to="/settings"><h2 onClick={() => setNavMenu(true)}>Settings</h2></Link>
         </div>
+        </>
     );
 }
