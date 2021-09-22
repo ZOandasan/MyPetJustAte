@@ -1,23 +1,11 @@
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import FoundFoodsCompoent from '../FoundFoodsComponent/FoundFoodsComponent';
-import * as ingredientsAPI from '../../utilities/ingredients-api';
 
-export default function SearchFoodForm(){
+export default function SearchFoodForm({foundFoods, setFoundFoods}){
     const [formData, setFormData] = useState({
         pet: 'dog',
         food: '',
     });
-    const [foundFoods, setFoundFoods] = useState();
-    
-    useEffect(function(){
-        async function getIngredients() {
-            const ingredients = await ingredientsAPI.getAll();
-            console.log(ingredients);
-            setFoundFoods(ingredients);
-        }
-        getIngredients();
-    }, []);
-
 
     function handleChange (evt){
         setFormData({
@@ -27,9 +15,22 @@ export default function SearchFoodForm(){
     };
 
     function handleSubmit (evt){
-        //Use .filter method to get all ingredients that include the letters provided.
-        //Assign the array of remaining ingredients to foundFoods.
-        //Use the .Map to push out a card for every element of foundFoods.
+        evt.preventDefault();
+        let matchedItems = [];
+        if (foundFoods){
+            foundFoods.forEach(function(i, idx) {
+                let ingredient = i.ingredientName.toLowerCase();
+                let input = formData.food.toLowerCase();
+                if (ingredient === input) {
+                    matchedItems.push(i[idx]);
+                }
+            });
+        }
+        setFoundFoods(matchedItems);
+        setFormData({
+            pet: 'dog',
+            food: '',
+        });
     }
 
     return (
@@ -41,10 +42,6 @@ export default function SearchFoodForm(){
         
                     <button type="submit">Check Food Safety</button>
                 </form>
-            </div>
-            <br />
-            <div>
-                <FoundFoodsCompoent foundFoods={foundFoods}/>
             </div>
         </div>
     );

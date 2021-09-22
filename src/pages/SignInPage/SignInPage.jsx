@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import { useState } from 'react';
 import * as userService from '../../utilities/users-service';
 import SignUpForm from '../../components/SignUpForm/SignUpForm';
@@ -20,9 +19,6 @@ export default function SignInPage({user, setUser}){
                 <p>{user.name}</p>
                 <p>{user.email}</p>
                 <button onClick= {() => handleLogOut()}>Log Out</button>
-                <div>
-                    <Link to="/admin"><button>Admin Portal Link</button></Link>
-                </div>
             </div>
         )
     } else {
