@@ -47,5 +47,7 @@ export default function SourcesPage(){
                 </>
             );
         }
+    } else {
+        return <br />;
     }
 }
