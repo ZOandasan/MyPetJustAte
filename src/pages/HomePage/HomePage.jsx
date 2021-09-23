@@ -4,6 +4,7 @@ import SearchFoodForm from '../../components/SearchFoodForm/SearchFoodForm';
 import FoundFoodsComponent from '../../components/FoundFoodsComponent/FoundFoodsComponent';
 import * as ingredientsAPI from '../../utilities/ingredients-api';
 import EmergencyButton from '../../components/EmergencyButton/EmergencyButton';
+import './HomePage.css'
 
 
 export default function HomePage({ setNavMenu }){
@@ -28,9 +29,9 @@ export default function HomePage({ setNavMenu }){
 
     if (search > 0){
         return (
-            <>
-                <h2>Can my dog eat this?</h2>
-                <SearchFoodForm foundFoods={foundFoods} setFoundFoods={setFoundFoods} search={search} setSearch={setSearch} setLastSearch={setLastSearch}/>
+            <div className='home-container'>
+                <div className='title'>Can my <br></br> dog eat this?</div>
+                <SearchFoodForm classname='search-component' foundFoods={foundFoods} setFoundFoods={setFoundFoods} search={search} setSearch={setSearch} setLastSearch={setLastSearch}/>
                 <EmergencyButton setNavMenu={setNavMenu}/>
                 <div>
                     <span>
@@ -41,11 +42,11 @@ export default function HomePage({ setNavMenu }){
                         <Link to="/settings">Settings</Link>
                     </span>
                 </div>
-            </>
+            </div>
         )
     } else {
         return (
-            <>
+            <div className='home-container'>
                 <h2>Can my dog eat {lastSearch}?</h2>
                 <br />
                 <div>
@@ -56,7 +57,7 @@ export default function HomePage({ setNavMenu }){
                 <a href="" onClick={() => resetSearch()}>Search for another food</a>
                 <br />
                 <EmergencyButton setNavMenu={setNavMenu}/>
-            </>
+            </div>
         )
     }
 }
