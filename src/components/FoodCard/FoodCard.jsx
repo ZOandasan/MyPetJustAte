@@ -33,7 +33,7 @@ export default function FoodCard({food, index}){
         } else if (food.safeToEat === 'Depends') {
             return (
                 <>
-                <div className="food-card">
+                <div>
                     <a><img src="https://www.seekpng.com/png/full/21-211384_image-freeuse-stock-big-image-png-warning-sign.png" height="60px" width="60px"></img></a>
                     <h4>Maybe. Look at Sources for more Info.</h4>
                     <span></span>
@@ -47,7 +47,7 @@ export default function FoodCard({food, index}){
         } else {
             return (
                 <>
-                <div className="food-card">
+                <div>
                     <a><img src="https://www.seekpng.com/png/full/21-211384_image-freeuse-stock-big-image-png-warning-sign.png" height="60px" width="60px"></img></a>
                     <h4>No Data Found</h4>
                 </div>

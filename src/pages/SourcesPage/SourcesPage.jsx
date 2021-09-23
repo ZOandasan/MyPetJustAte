@@ -22,7 +22,7 @@ export default function SourcesPage(){
         if (food.safeToEat === 'Yes'){
             return (
                 <>
-                <h1>(Is/Are) {food.ingredientName} Safe To Eat?</h1>
+                <h1>Can My Dog Eat {food.ingredientName}?</h1>
                 <a><img src="https://freeiconshop.com/wp-content/uploads/edd/checkmark-flat.png" height="60px" width="60px"></img></a>
                 <h2>{food.safeToEat}</h2>
                 <SourcesComponent sources={sources}/>
@@ -31,7 +31,7 @@ export default function SourcesPage(){
         } else if (food.safeToEat === 'No'){
             return (
                 <>
-                    <h1>(Is/Are) {food.ingredientName} Safe To Eat?</h1>
+                    <h1>Can My Dog Eat {food.ingredientName}?</h1>
                     <a><img src="https://toppng.com/uploads/preview/red-x-in-circle-x-ico-11563249170jvl0jhe7df.png" height="60px" width="60px"></img></a>
                     <h2>{food.safeToEat}</h2>
                     <SourcesComponent sources={sources}/>
@@ -40,7 +40,7 @@ export default function SourcesPage(){
         } else {
             return (
                 <>
-                    <h1>(Is/Are) {food.ingredientName} Safe To Eat?</h1>
+                    <h1>Can My Dog Eat {food.ingredientName}?</h1>
                     <a><img src="https://www.seekpng.com/png/full/21-211384_image-freeuse-stock-big-image-png-warning-sign.png" height="60px" width="60px"></img></a>
                     <h2>{food.safeToEat}</h2>
                     <SourcesComponent sources={sources}/>
