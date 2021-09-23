@@ -46,18 +46,21 @@ export default function SettingsPage(){
         <div>
             <h1>Settings Page</h1>
             <div>
-                <h3>Color Theme</h3>
+                <p>Customize your experience. Keep your pup healthy in a stylish way.</p>
+                <br />
                 <div>
-                    <button onClick={() => setLight()}>Beta Theme</button>
+                    <a onClick={() => setLight()}>Beta Mode</a>
                 </div>
+                <br />
                 <div>
-                    <button onClick={() => setDark()}>Dark Theme</button>
+                    <a onClick={() => setDark()}>Dark Mode</a>
                 </div>
+                <br />
                 <div>
-                    <button onClick={() => setSEITheme()}>Cafe Theme</button>
+                    <a onClick={() => setSEITheme()}>Dog Mode</a>
                 </div>
                     {/*
-                    <button onClick={() => setNewTheme()}>Alt Theme</button>
+                    <a onClick={() => setNewTheme()}>Alt Theme</a>
                     */}
             </div>
         </div>

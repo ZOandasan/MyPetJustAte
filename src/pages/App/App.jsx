@@ -7,7 +7,6 @@ import HomePage from '../HomePage/HomePage';
 import AboutPage from '../AboutPage/AboutPage';
 import SettingsPage from '../SettingsPage/SettingsPage';
 import SignInPage from '../SignInPage/SignInPage';
-import EmergencyButton from '../../components/EmergencyButton/EmergencyButton';
 import EmergencyPage from '../EmergencyPage/EmergencyPage';
 import NavPage from '../NavPage/NavPage';
 import ArticlesPage from '../ArticlesPage/ArticlesPage';
@@ -18,41 +17,38 @@ export default function App() {
 
   return ( 
     <>
-    <main className="App">
-      { navMenu ? 
-        <>
-          <NavBar setNavMenu={setNavMenu}/>
-          <Switch>
-            <Route path="/home">
-              <HomePage />
-            </Route>
-            <Route path="/sign-in">
-              <SignInPage user={user} setUser={setUser}/>
-            </Route>
-            <Route path="/about">
-              <AboutPage />
-            </Route>
-            <Route path="/settings">
-              <SettingsPage />
-            </Route>
-            <Route path="/emergency">
-              <EmergencyPage />
-            </Route>
-            <Route path="/articles">
-              <ArticlesPage />
-            </Route>
-            <Redirect to="/home" />
-          </Switch>
-        </>
-        :
-        <>
-          <NavPage setNavMenu={setNavMenu}/>
-        </>
-        } 
-    </main>
-    <footer>
-      <EmergencyButton />
-    </footer>
+      <main className="App">
+        { navMenu ? 
+          <>
+            <NavBar setNavMenu={setNavMenu}/>
+            <Switch>
+              <Route path="/home">
+                <HomePage setNavMenu={setNavMenu}/>
+              </Route>
+              <Route path="/sign-in">
+                <SignInPage user={user} setUser={setUser}/>
+              </Route>
+              <Route path="/about">
+                <AboutPage />
+              </Route>
+              <Route path="/settings">
+                <SettingsPage />
+              </Route>
+              <Route path="/emergency">
+                <EmergencyPage />
+              </Route>
+              <Route path="/articles">
+                <ArticlesPage />
+              </Route>
+              <Redirect to="/home" />
+            </Switch>
+          </>
+          :
+          <>
+            <NavPage setNavMenu={setNavMenu}/>
+          </>
+          } 
+      </main>
     </>
   );
 }

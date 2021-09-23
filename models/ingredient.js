@@ -5,7 +5,11 @@ const citationSchema = new Schema ({
     citationName: {
         type: String,
         required: true,
-    }
+    },
+    citeTitle: {
+        type: String,
+        default: 'Article',
+    },
 })
 
 const ingredientSchema = new Schema ({

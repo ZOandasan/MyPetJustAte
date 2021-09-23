@@ -29,7 +29,7 @@ export default function AboutPage(){
               <br />&nbsp;&nbsp;&nbsp;
               <td>
                 <a href="https://www.linkedin.com/in/carlos-shows/">
-                  <img className="img"
+                  <img className="linkedin"
                     src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/LinkedIn_logo_initials.png/600px-LinkedIn_logo_initials.png"
                     alt="linkedin"
                   ></img>
@@ -45,7 +45,7 @@ export default function AboutPage(){
               <br />&nbsp;&nbsp;&nbsp;
               <td>
                 <a href="https://www.linkedin.com/in/jimmy-liu-a9169310/">
-                  <img className="img"
+                  <img className="linkedin"
                     src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/LinkedIn_logo_initials.png/600px-LinkedIn_logo_initials.png"
                     alt="linkedin"
                   ></img>
@@ -61,7 +61,7 @@ export default function AboutPage(){
               <br />&nbsp;&nbsp;&nbsp;
               <td>
                 <a href="https://www.linkedin.com/in/josiahwu/">
-                  <img className="img"
+                  <img className="linkedin"
                     src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/LinkedIn_logo_initials.png/600px-LinkedIn_logo_initials.png"
                     alt="linkedin"
                   ></img>
@@ -77,7 +77,7 @@ export default function AboutPage(){
               <br />&nbsp;&nbsp;&nbsp;
               <td>
                 <a href="https://www.linkedin.com/in/zachary-oandasan/">{/* Update this Link */}
-                  <img className="img"
+                  <img className="linkedin"
                     src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/LinkedIn_logo_initials.png/600px-LinkedIn_logo_initials.png"
                     alt="linkedin"
                   ></img>
@@ -93,7 +93,7 @@ export default function AboutPage(){
               <br />&nbsp;&nbsp;&nbsp;
               <td>
                 <a href="https://www.linkedin.com/in/zachary-oandasan/">{/* Update this Link */}
-                  <img className="img"
+                  <img className="linkedin"
                     src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/LinkedIn_logo_initials.png/600px-LinkedIn_logo_initials.png"
                     alt="linkedin"
                   ></img>
@@ -109,7 +109,7 @@ export default function AboutPage(){
               <br />&nbsp;&nbsp;&nbsp;
               <td>
                 <a href="https://www.linkedin.com/in/zachary-oandasan/">
-                  <img className="img"
+                  <img className="linkedin"
                     src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/LinkedIn_logo_initials.png/600px-LinkedIn_logo_initials.png"
                     alt="linkedin"
                   ></img>

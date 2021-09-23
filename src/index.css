@@ -120,7 +120,6 @@ input {
   font-size: 2vmin;
   border: .1vmin solid var(--border);
   border-radius: .5vmin;
-  width: 95vmin;
   color: var(--plain-text);
   background-image: none !important; /* prevent lastpass */
   outline: none;
@@ -191,8 +190,45 @@ a:visited {
   font-size: 5vmin;
 }
 
+.emergency:hover {
+  background-color: var(--error);
+  color: white;
+  font-size: 5vmin;
+}
+
 .food-card {
   background-color: var(--background-card);
   border: .1vmin solid var(--border);
   border-radius: 5vmin;
+}
+
+.nav-right{
+  align-content: right;
+  text-align: right;
+}
+
+.nav-left{
+  align-content: left;
+  text-align: left;
+}
+
+.nav-container{
+  border: 1px solid black;
+  height: 70vmin;
+  background-color: var(--background-card);
+}
+
+.spaced {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.spaced li {
+  height: 60px;
+  margin-left: 15px;
+  margin-right: 15px;
 }
