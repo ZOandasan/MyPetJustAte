@@ -1,4 +1,5 @@
 import {useState, useEffect} from 'react';
+import { Link } from "react-router-dom";
 import SearchFoodForm from '../../components/SearchFoodForm/SearchFoodForm';
 import FoundFoodsComponent from '../../components/FoundFoodsComponent/FoundFoodsComponent';
 import * as ingredientsAPI from '../../utilities/ingredients-api';
@@ -31,6 +32,15 @@ export default function HomePage(){
                 <h2>Can my dog eat this?</h2>
                 <SearchFoodForm foundFoods={foundFoods} setFoundFoods={setFoundFoods} search={search} setSearch={setSearch} setLastSearch={setLastSearch}/>
                 <EmergencyButton />
+                <div>
+                    <span>
+                        <Link to="/about">About</Link>
+                        <span> | </span>
+                        <Link to="/articles">Articles</Link>
+                        <span> | </span>
+                        <Link to="/settings">Settings</Link>
+                    </span>
+                </div>
             </>
         )
     } else {
