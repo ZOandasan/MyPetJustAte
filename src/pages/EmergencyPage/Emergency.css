@@ -18,4 +18,19 @@
 .call-title {
     font-size: 10px;
     text-align: left;
+
+}
+
+.profile {
+    display: flex;
+    flex-direction: column;
+}
+
+.title {
+    display: flex;
+    flex-direction: row;
+}
+
+.name {
+    font-size: 18px;
 }
