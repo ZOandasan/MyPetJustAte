@@ -4,7 +4,8 @@ import './EmergencyButton.css'
 export default function EmergencyButton({setNavMenu}){
     return (
         <>
-            <Link to="/emergency"><button className="emergency" onClick={() => setNavMenu(true)}>Find a Vetinarian</button></Link>
+            <div className='emergency-description'>Have an emergency? Click below to connect to a care provider near you.</div>
+            <Link to="/emergency"><button className="emergency" onClick={() => setNavMenu(true)}>Find Urgent Care Near You</button></Link>
         </>
     )
 }
