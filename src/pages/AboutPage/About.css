@@ -31,9 +31,24 @@ table {
 th {
     text-decoration: underline;
 }
-    
+
+.profile {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    text-align: left;
+    align-content: center;
+}
+
+.profile-info{
+    margin: 1px;
+}
+
+.profile-image{
+
+}
+
 .linkedin {
     height: 30px;
     width: 30px;  
 }
-    
