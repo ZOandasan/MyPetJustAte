@@ -40,14 +40,11 @@ export default function SearchFoodForm({foundFoods, setFoundFoods, search, setSe
 
     return (
         <div>
-            <div className="form-container">
-                <form autoComplete="off" onSubmit={handleSubmit}>
-                    <label>Is this safe for my dog to Eat?</label>
-                    <input name="food" type="text" value={formData.food} onChange={handleChange} />
-        
-                    <button type="submit">Check Food Safety</button>
-                </form>
-            </div>
+            <form autoComplete="off" onSubmit={handleSubmit}>
+                <input name="food" type="text" value={formData.food} onChange={handleChange} />
+    
+                <button type="submit">SEARCH</button>
+            </form>
         </div>
     );
 }

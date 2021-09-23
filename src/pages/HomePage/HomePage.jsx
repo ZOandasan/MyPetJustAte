@@ -26,17 +26,21 @@ export default function HomePage(){
     if (search > 0){
         return (
             <>
+                <h2>Can my dog eat this?</h2>
                 <SearchFoodForm foundFoods={foundFoods} setFoundFoods={setFoundFoods} search={search} setSearch={setSearch}/>
             </>
         )
     } else {
         return (
             <>
-                <button onClick={() => resetSearch()}>Reset Search</button>
+                <h2>Can my dog eat this?</h2>
                 <br />
                 <div>
                     <FoundFoodsComponent foundFoods={foundFoods}/>
                 </div>
+                <br />
+                <br />
+                <a href="" onClick={() => resetSearch()}>Search for another food</a>
             </>
         )
     }
