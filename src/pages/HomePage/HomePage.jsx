@@ -2,6 +2,7 @@ import {useState, useEffect} from 'react';
 import SearchFoodForm from '../../components/SearchFoodForm/SearchFoodForm';
 import FoundFoodsComponent from '../../components/FoundFoodsComponent/FoundFoodsComponent';
 import * as ingredientsAPI from '../../utilities/ingredients-api';
+import EmergencyButton from '../../components/EmergencyButton/EmergencyButton';
 
 
 export default function HomePage(){
@@ -29,6 +30,7 @@ export default function HomePage(){
             <>
                 <h2>Can my dog eat this?</h2>
                 <SearchFoodForm foundFoods={foundFoods} setFoundFoods={setFoundFoods} search={search} setSearch={setSearch} setLastSearch={setLastSearch}/>
+                <EmergencyButton />
             </>
         )
     } else {
@@ -42,6 +44,8 @@ export default function HomePage(){
                 <br />
                 <br />
                 <a href="" onClick={() => resetSearch()}>Search for another food</a>
+                <br />
+                <EmergencyButton />
             </>
         )
     }

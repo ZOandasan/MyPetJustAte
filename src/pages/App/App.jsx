@@ -7,7 +7,6 @@ import HomePage from '../HomePage/HomePage';
 import AboutPage from '../AboutPage/AboutPage';
 import SettingsPage from '../SettingsPage/SettingsPage';
 import SignInPage from '../SignInPage/SignInPage';
-import EmergencyButton from '../../components/EmergencyButton/EmergencyButton';
 import EmergencyPage from '../EmergencyPage/EmergencyPage';
 import NavPage from '../NavPage/NavPage';
 import ArticlesPage from '../ArticlesPage/ArticlesPage';
@@ -50,9 +49,6 @@ export default function App() {
         </>
         } 
     </main>
-    <footer>
-      <EmergencyButton />
-    </footer>
     </>
   );
 }

@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import EmergencyButton from "../../components/EmergencyButton/EmergencyButton";
 
 export default function NavPage({setNavMenu}){
     return (
@@ -15,6 +16,9 @@ export default function NavPage({setNavMenu}){
             <br />
             <Link to="/settings"><h2 onClick={() => setNavMenu(true)}>Settings</h2></Link>
         </div>
+        <footer>
+            <EmergencyButton />
+        </footer>
         </>
     );
 }
