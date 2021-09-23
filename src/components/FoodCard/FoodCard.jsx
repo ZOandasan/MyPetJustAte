@@ -19,7 +19,7 @@ export default function FoodCard({food, index}){
                 <div className="food-card">
                     <h4>{food.ingredientName}: Do Not Eat</h4>
                 </div>
-                <SourcesComponent sources={food.citations}/>
+                <SourcesComponent food={food}/>
                 </>
             )
         } else if (food.safeToEat === 'Maybe') {
@@ -29,7 +29,7 @@ export default function FoodCard({food, index}){
                     <h4>{food.ingredientName}: Maybe. Look at Sources for more Info.</h4>
                     <span></span>
                 </div>
-                <SourcesComponent sources={food.citations}/>
+                <SourcesComponent food={food}/>
                 </>
             )
         } else {
@@ -38,7 +38,7 @@ export default function FoodCard({food, index}){
                 <div className="food-card">
                     <h4>{food.ingredientName}: No Data Found</h4>
                 </div>
-                <SourcesComponent sources={food.citations}/>
+                <SourcesComponent food={food}/>
                 </>
             )
         }
