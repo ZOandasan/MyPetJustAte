@@ -7,10 +7,14 @@ export default function SourcesComponent({sources}){
         sources.forEach(function(s, idx){
             initCards.push(
                 <>
-                    <SourcesCard key={idx} source={s}/>
+                    <hr />
+                    <SourcesCard key={idx} index={idx + 1} source={s}/>
                 </>
             );
         });
+        initCards.push(
+            <hr />
+        )
     }
 
     return ( sources ?

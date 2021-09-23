@@ -43,7 +43,6 @@ th {
     justify-content: center;
     align-content: center;
 }
-
 .title {
     display: flex;
     flex-direction: row;
@@ -54,6 +53,7 @@ th {
     font-size: 16px;
     font-weight: bold;
     letter-spacing: 0;
+
 }
 
 .linkedin {
