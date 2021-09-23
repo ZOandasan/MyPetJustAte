@@ -49,12 +49,16 @@ export default function SettingsPage(){
                 <h3>Color Theme</h3>
                 <div>
                     <button onClick={() => setLight()}>Beta Theme</button>
+                </div>
+                <div>
                     <button onClick={() => setDark()}>Dark Theme</button>
+                </div>
+                <div>
                     <button onClick={() => setSEITheme()}>Cafe Theme</button>
+                </div>
                     {/*
                     <button onClick={() => setNewTheme()}>Alt Theme</button>
                     */}
-                </div>
             </div>
         </div>
     )
