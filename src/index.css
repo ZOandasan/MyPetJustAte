@@ -120,7 +120,6 @@ input {
   font-size: 2vmin;
   border: .1vmin solid var(--border);
   border-radius: .5vmin;
-  width: 95vmin;
   color: var(--plain-text);
   background-image: none !important; /* prevent lastpass */
   outline: none;

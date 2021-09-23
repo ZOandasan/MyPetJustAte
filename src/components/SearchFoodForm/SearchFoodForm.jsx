@@ -44,9 +44,8 @@ export default function SearchFoodForm({foundFoods, setFoundFoods, search, setSe
         <div>
             <form autoComplete="off" onSubmit={handleSubmit}>
                 <input name="food" type="text" value={formData.food} onChange={handleChange} />
-    
-                <button type="submit">SEARCH</button>
             </form>
+            <button onClick={handleSubmit}>SEARCH</button>
         </div>
     );
 }
