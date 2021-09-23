@@ -1,6 +1,7 @@
 .articles-container {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
     margin: 0 auto;
     width: 375px;
@@ -8,17 +9,19 @@
 }
 
 .article-card {
-    margin: 5px 10px;
+    margin-top: 3px;
+    margin-left: -20px;
     height: 200px;
-    width: 350px;
+    width: 330px;
     border-radius: 20px;
-    border: 1px solid black
+    border: 1px solid black;
 }
 
 .articles-title {
     text-align: left;
     font-size: 2rem;
-    margin-left: -180px;
+    margin-left: -190px;
+    margin-bottom: -5px;
 
 }
 
@@ -28,13 +31,14 @@
 }
 
 .article-title {
-    margin: 100px 0 0 10px;
+    margin: 110px 0 0 10px;
     font-weight: bold;
     font-size: 1.2rem;
 }
 
 .article-link {
     margin-left: 10px;
+    margin-top: 7px;
     text-decoration: underline;
 }
 
