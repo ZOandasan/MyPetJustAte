@@ -23,7 +23,7 @@ export default function App() {
             <NavBar setNavMenu={setNavMenu}/>
             <Switch>
               <Route path="/home">
-                <HomePage />
+                <HomePage setNavMenu={setNavMenu}/>
               </Route>
               <Route path="/sign-in">
                 <SignInPage user={user} setUser={setUser}/>

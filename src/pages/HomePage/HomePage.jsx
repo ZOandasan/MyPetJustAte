@@ -6,7 +6,7 @@ import * as ingredientsAPI from '../../utilities/ingredients-api';
 import EmergencyButton from '../../components/EmergencyButton/EmergencyButton';
 
 
-export default function HomePage(){
+export default function HomePage({ setNavMenu }){
     const [allFoods, setAllFoods] = useState();
     const [foundFoods, setFoundFoods] = useState();
     const [search, setSearch] = useState(1);
@@ -31,7 +31,7 @@ export default function HomePage(){
             <>
                 <h2>Can my dog eat this?</h2>
                 <SearchFoodForm foundFoods={foundFoods} setFoundFoods={setFoundFoods} search={search} setSearch={setSearch} setLastSearch={setLastSearch}/>
-                <EmergencyButton />
+                <EmergencyButton setNavMenu={setNavMenu}/>
                 <div>
                     <span>
                         <Link to="/about">About</Link>
@@ -55,7 +55,7 @@ export default function HomePage(){
                 <br />
                 <a href="" onClick={() => resetSearch()}>Search for another food</a>
                 <br />
-                <EmergencyButton />
+                <EmergencyButton setNavMenu={setNavMenu}/>
             </>
         )
     }
