@@ -1,7 +1,13 @@
 .App {
+  display: flex;
+  justify-content: center;
+  align-content: center;
   text-align: center;
 }
 
+.app-main {
+  width: 375px;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;

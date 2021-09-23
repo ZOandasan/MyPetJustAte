@@ -16,8 +16,8 @@ export default function App() {
   const [navMenu, setNavMenu] = useState(true);
 
   return ( 
-    <>
-      <main className="App">
+    <div className='App'>
+      <main className="app-main">
         { navMenu ? 
           <>
             <NavBar setNavMenu={setNavMenu}/>
@@ -49,6 +49,6 @@ export default function App() {
           </>
           } 
       </main>
-    </>
+    </div>
   );
 }
