@@ -8,7 +8,7 @@ export default function FoodCard({food, index}){
             return (
                 <>
                 <div className="food-card">
-                    <h4>{food.ingredientName}: Safe to Eat</h4>
+                    <h4>Safe to Eat</h4>
                 </div>
                 <Link to={`/sources/${food._id}`}>
                     <button>Sources</button>
@@ -19,18 +19,18 @@ export default function FoodCard({food, index}){
             return (
                 <>
                 <div className="food-card">
-                    <h4>{food.ingredientName}: Do Not Eat</h4>
+                    <h4>Do Not Eat</h4>
                 </div>
                 <Link to={`/sources/${food._id}`}>
                     <button>Sources</button>
                 </Link>
                 </>
             )
-        } else if (food.safeToEat === 'Maybe') {
+        } else if (food.safeToEat === 'Depends') {
             return (
                 <>
                 <div className="food-card">
-                    <h4>{food.ingredientName}: Maybe. Look at Sources for more Info.</h4>
+                    <h4>Maybe. Look at Sources for more Info.</h4>
                     <span></span>
                 </div>
                 <Link to={`/sources/${food._id}`}>
@@ -42,7 +42,7 @@ export default function FoodCard({food, index}){
             return (
                 <>
                 <div className="food-card">
-                    <h4>{food.ingredientName}: No Data Found</h4>
+                    <h4>No Data Found</h4>
                 </div>
                 <Link to={`/sources/${food._id}`}>
                     <button>Sources</button>
