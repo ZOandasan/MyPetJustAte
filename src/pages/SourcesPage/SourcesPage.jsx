@@ -18,15 +18,34 @@ export default function SourcesPage(){
         getFood();
     }, []);
 
-    return( food && sources ?
-        <>
-            <h1>(Is/Are) {food.ingredientName} Safe To Eat?</h1>
-            <h2>{food.safeToEat}</h2>
-            <SourcesComponent sources={sources}/>
-        </>
-        :
-        <>
-            <h1>Error 404: Sources Not Found</h1>
-        </>
-    );
+    if (food && sources){
+        if (food.safeToEat === 'Yes'){
+            return (
+                <>
+                <h1>(Is/Are) {food.ingredientName} Safe To Eat?</h1>
+                <a><img src="https://freeiconshop.com/wp-content/uploads/edd/checkmark-flat.png" height="60px" width="60px"></img></a>
+                <h2>{food.safeToEat}</h2>
+                <SourcesComponent sources={sources}/>
+                </>
+            );
+        } else if (food.safeToEat === 'No'){
+            return (
+                <>
+                    <h1>(Is/Are) {food.ingredientName} Safe To Eat?</h1>
+                    <a><img src="https://toppng.com/uploads/preview/red-x-in-circle-x-ico-11563249170jvl0jhe7df.png" height="60px" width="60px"></img></a>
+                    <h2>{food.safeToEat}</h2>
+                    <SourcesComponent sources={sources}/>
+                </>
+            );
+        } else {
+            return (
+                <>
+                    <h1>(Is/Are) {food.ingredientName} Safe To Eat?</h1>
+                    <a><img src="https://www.seekpng.com/png/full/21-211384_image-freeuse-stock-big-image-png-warning-sign.png" height="60px" width="60px"></img></a>
+                    <h2>{food.safeToEat}</h2>
+                    <SourcesComponent sources={sources}/>
+                </>
+            );
+        }
+    }
 }

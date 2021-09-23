@@ -7,8 +7,9 @@ export default function FoodCard({food, index}){
         if (food.safeToEat === 'Yes') {
             return (
                 <>
-                <div className="food-card">
-                    <h4>Safe to Eat</h4>
+                <div>
+                    <a><img src="https://freeiconshop.com/wp-content/uploads/edd/checkmark-flat.png" height="60px" width="60px"></img></a>
+                    <h2>Safe To Eat</h2>
                 </div>
                 <br />
                 <Link to={`/sources/${food._id}`}>
@@ -19,8 +20,9 @@ export default function FoodCard({food, index}){
         } else if (food.safeToEat === 'No') {
             return (
                 <>
-                <div className="food-card">
-                    <h4>Do Not Eat</h4>
+                <div>
+                <a><img src="https://toppng.com/uploads/preview/red-x-in-circle-x-ico-11563249170jvl0jhe7df.png" height="60px" width="60px"></img></a>
+                    <h2>Do Not Eat</h2>
                 </div>
                 <br />
                 <Link to={`/sources/${food._id}`}>
@@ -32,6 +34,7 @@ export default function FoodCard({food, index}){
             return (
                 <>
                 <div className="food-card">
+                    <a><img src="https://www.seekpng.com/png/full/21-211384_image-freeuse-stock-big-image-png-warning-sign.png" height="60px" width="60px"></img></a>
                     <h4>Maybe. Look at Sources for more Info.</h4>
                     <span></span>
                 </div>
@@ -45,6 +48,7 @@ export default function FoodCard({food, index}){
             return (
                 <>
                 <div className="food-card">
+                    <a><img src="https://www.seekpng.com/png/full/21-211384_image-freeuse-stock-big-image-png-warning-sign.png" height="60px" width="60px"></img></a>
                     <h4>No Data Found</h4>
                 </div>
                 </>
