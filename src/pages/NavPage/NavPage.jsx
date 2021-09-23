@@ -16,7 +16,9 @@ export default function NavPage({setNavMenu}){
             </ul>
         </div>
         <footer>
-            <EmergencyButton />
+            <div>
+                <EmergencyButton setNavMenu={setNavMenu}/>
+            </div>
         </footer>
         </>
     );
