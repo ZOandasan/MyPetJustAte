@@ -1,19 +1,50 @@
 .articles-container {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    width: 375px;
+
+}
+
+.article-card {
+    margin: 5px 10px;
+    height: 200px;
+    width: 350px;
+    border-radius: 20px;
+    border: 1px solid black
+}
+
+.articles-title {
+    text-align: left;
+    font-size: 2rem;
+    margin-left: -180px;
+
+}
+
+.article-title, .article-link {
+    color: white;
+    text-align: left;
+}
+
+.article-title {
+    margin: 100px 0 0 10px;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.article-link {
+    margin-left: 10px;
+    text-decoration: underline;
 }
 
 #rover {
     background-image: url('https://i.imgur.com/hi3u9I6.png');
+    background-size: 350px 200px;
 }
 
 #fluentwoof {
     background-image: url('https://i.imgur.com/MpUsNPE.jpg');
+    background-size: 350px 200px;
 }
 
-.article-card {
-    margin: 5px auto;
-    height: 350px;
-    width: 500px;
-    color: white;
-}
