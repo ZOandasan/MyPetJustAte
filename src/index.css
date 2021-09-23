@@ -28,11 +28,12 @@ body {
 }
 
 footer {
-  position: fixed;
-  bottom: 0;
   background-color: var(--background-2);
   width: 100%;
   text-align: center;
+  align-content: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 code {
@@ -99,28 +100,11 @@ p.error-message {
   text-align: center;
 }
 
-/* form {
-  display: grid;
-  grid-template-columns: 1fr;
-  align-content: center;
-  gap: 1.25vmin;
-  color: var(--plain-text);
-} */
-
 label {
   font-size: 2vmin;
   display: flex;
   align-items: center;
 }
-
-/* input {
-  padding: 1vmin;
-  font-size: 2vmin;
-  border: .1vmin solid var(--border);
-  border-radius: .5vmin;
-  color: var(--plain-text);
-  background-image: none !important; /* prevent lastpass */
-  */
 
 h1, h2, h3, h4, h5 {
   color: var(--header-text);
@@ -190,7 +174,6 @@ a:visited {
 .emergency:hover {
   background-color: #e08585;
   color: white;
-  font-size: 5vmin;
 }
 
 .food-card {

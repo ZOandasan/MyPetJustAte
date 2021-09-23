@@ -15,10 +15,9 @@ export default function NavPage({setNavMenu}){
                 <li><Link to="/settings"><h2 onClick={() => setNavMenu(true)}>Settings</h2></Link></li>
             </ul>
         </div>
-        <footer>
-            <div>
-                <EmergencyButton setNavMenu={setNavMenu}/>
-            </div>
+        <br />
+        <footer>    
+            <EmergencyButton setNavMenu={setNavMenu}/>   
         </footer>
         </>
     );
