@@ -11,6 +11,8 @@ export default function NavPage({setNavMenu}){
             <br />
             <Link to="/about"><h2 onClick={() => setNavMenu(true)}>About</h2></Link>
             <br />
+            <Link to="/articles"><h2 onClick={() => setNavMenu(true)}>Articles</h2></Link>
+            <br />
             <Link to="/settings"><h2 onClick={() => setNavMenu(true)}>Settings</h2></Link>
         </div>
         </>

@@ -10,6 +10,7 @@ import SignInPage from '../SignInPage/SignInPage';
 import EmergencyButton from '../../components/EmergencyButton/EmergencyButton';
 import EmergencyPage from '../EmergencyPage/EmergencyPage';
 import NavPage from '../NavPage/NavPage';
+import ArticlesPage from '../ArticlesPage/ArticlesPage';
 
 export default function App() {
   const [user, setUser] = useState(getUser());
@@ -36,6 +37,9 @@ export default function App() {
             </Route>
             <Route path="/emergency">
               <EmergencyPage />
+            </Route>
+            <Route path="/articles">
+              <ArticlesPage />
             </Route>
             <Redirect to="/home" />
           </Switch>
