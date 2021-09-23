@@ -45,8 +45,6 @@ export default function HomePage({ setNavMenu }){
                 <div>
                     <FoundFoodsComponent foundFoods={foundFoods}/>
                 </div>
-                <br />
-                <br />
                 <a href="" onClick={() => resetSearch()}>Search for another food</a>
                 <br />
                 <EmergencyButton setNavMenu={setNavMenu}/>

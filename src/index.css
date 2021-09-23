@@ -183,9 +183,11 @@ a:visited {
 }
 
 .nav-container{
-  border: 1px solid black;
   height: 70vmin;
-  background-color: var(--background-card);
+}
+
+.nav-button{
+  width: 30vmin;
 }
 
 .spaced {
@@ -197,12 +199,9 @@ a:visited {
   flex-direction: column;
   justify-content: space-between;
 }
+
 .spaced li {
   height: 60px;
   margin-left: 15px;
   margin-right: 15px;
-}
-
-.source-card{
-  border: 1px solid black;
 }
