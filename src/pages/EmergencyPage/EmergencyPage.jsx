@@ -56,7 +56,7 @@ export default function EmergencyPage() {
           inputValue='Overland Veterinary Clinic, 3465 Overland Ave, Los Angeles, CA 90034'
         />
       </MapGL>
-      <div className='call-title'>Has your pet ingested a potentially poisonous substance? Please call ASPCA Animal Poison Control Center hotline available 24 hours, 365 days a year.</div>
+      <div className='call-title'>ASPCA Animal Poison Control Center hotline available 24 hours, 365 days a year.</div>
       <button className='call-button'>Call Animal Poison Control Center Hotline</button>
     </div>
   );

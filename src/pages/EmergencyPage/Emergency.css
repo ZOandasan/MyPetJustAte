@@ -16,21 +16,13 @@
 }
 
 .call-title {
-    font-size: 10px;
+    margin: 25px auto 0 auto;
     text-align: left;
+    width: 320px;
+    font-size: 14px;
+    font-weight: bold;
+
+
 
 }
 
-.profile {
-    display: flex;
-    flex-direction: column;
-}
-
-.title {
-    display: flex;
-    flex-direction: row;
-}
-
-.name {
-    font-size: 18px;
-}
