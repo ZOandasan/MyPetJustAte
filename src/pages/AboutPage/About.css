@@ -34,18 +34,26 @@ th {
 
 .profile {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     padding: 10px;
-    text-align: left;
+    justify-content: center;
     align-content: center;
 }
 
 .profile-info{
-    margin: 1px;
+    margin-bottom: 1px;
 }
 
 .profile-image{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+}
 
+.profile.name{
+    text-align: center;
+    align-content: center;
+    margin: 0 auto;
 }
 
 .linkedin {

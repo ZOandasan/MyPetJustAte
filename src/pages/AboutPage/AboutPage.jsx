@@ -10,10 +10,10 @@ export default function AboutPage(){
               <img className="linkedin" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/LinkedIn_logo_initials.png/600px-LinkedIn_logo_initials.png" alt="linkedin"
               ></img>
             </a>
+            <p className="profile-name">Carlos Shows</p>
           </div>
           <div className="profile-info">
-            <h4>Carlos Shows</h4>
-            <span>Content Strategist / UX Designer</span>
+            <p>Content Strategist / UX Designer</p>
           </div>
         </div>
 
