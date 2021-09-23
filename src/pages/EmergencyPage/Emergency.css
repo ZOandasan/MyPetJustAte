@@ -1,3 +1,28 @@
 .map-container {
-    height: 80vh;
+    margin-top: 20px;
+    height: 340px;
+    width: 340px;
 }
+
+.call-button {
+    background-color: #ce2029;
+    color: white;
+    border-color: #A7A7A7;
+    font-size: 20px;
+    height: 50px;
+    width: 320px;
+    border-radius: 4px;
+    margin-left: 0;
+}
+
+.call-title {
+    margin: 25px auto 0 auto;
+    text-align: left;
+    width: 320px;
+    font-size: 14px;
+    font-weight: bold;
+
+
+
+}
+

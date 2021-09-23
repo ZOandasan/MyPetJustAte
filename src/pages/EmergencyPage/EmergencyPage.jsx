@@ -14,8 +14,8 @@ mapboxgl.workerClass = require('worker-loader!mapbox-gl/dist/mapbox-gl-csp-worke
 
 export default function EmergencyPage() {
   const [viewport, setViewport] = useState({
-    latitude: 40.7128,
-    longitude: -74.0060,
+    latitude: 34.024750,
+    longitude: -118.412130,
     zoom: 8
   });
   const mapRef = useRef();
@@ -38,7 +38,6 @@ export default function EmergencyPage() {
 
   return (
     <div className='map-container'>
-        <p>If you believe that your beloved furbaby has ate something toxic, please go to nearest animal hospital near you.</p>
       <MapGL
         ref={mapRef}
         {...viewport}
@@ -53,10 +52,12 @@ export default function EmergencyPage() {
           onViewportChange={handleGeocoderViewportChange}
           mapboxApiAccessToken={MAPBOX_TOKEN}
           position="top-left"
-          limit={7}
-          inputValue='animal hospital'
+          limit={4}
+          inputValue='Overland Veterinary Clinic, 3465 Overland Ave, Los Angeles, CA 90034'
         />
       </MapGL>
+      <div className='call-title'>ASPCA Animal Poison Control Center hotline available 24 hours, 365 days a year.</div>
+      <button className='call-button'>Call Animal Poison Control Center Hotline</button>
     </div>
   );
 };

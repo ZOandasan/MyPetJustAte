@@ -5,16 +5,14 @@ export default function AboutPage(){
       <div>
         <h1>Meet the Team</h1>
         <div className="profile">
-          <div className="profile-image">
+          <div className="title">
             <a href="https://www.linkedin.com/in/carlos-shows/">
-              <img className="linkedin" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/LinkedIn_logo_initials.png/600px-LinkedIn_logo_initials.png" alt="linkedin"
-              ></img>
+              <img className="linkedin" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/LinkedIn_logo_initials.png/600px-LinkedIn_logo_initials.png" alt="linkedin"></img>
             </a>
-            <p className="profile-name">Carlos Shows</p>
+            <div className='name'>Carlos Shows</div>
           </div>
-          <div className="profile-info">
-            <p>Content Strategist / UX Designer</p>
-          </div>
+          <div className='description'>Content Strategist / UX Designer</div>
+
         </div>
 
         <div className="profile">

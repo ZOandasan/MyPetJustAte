@@ -32,28 +32,28 @@ th {
     text-decoration: underline;
 }
 
+
+.profile-info{
+    margin: 1px;
+}
+
 .profile {
     display: flex;
     flex-direction: column;
-    padding: 10px;
     justify-content: center;
     align-content: center;
 }
-
-.profile-info{
-    margin-bottom: 1px;
-}
-
-.profile-image{
+.title {
     display: flex;
     flex-direction: row;
-    align-content: center;
+    justify-content: center;
 }
 
-.profile.name{
-    text-align: center;
-    align-content: center;
-    margin: 0 auto;
+.name {
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 0;
+
 }
 
 .linkedin {
