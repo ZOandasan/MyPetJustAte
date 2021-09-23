@@ -17,38 +17,38 @@ export default function App() {
 
   return ( 
     <>
-    <main className="App">
-      { navMenu ? 
-        <>
-          <NavBar setNavMenu={setNavMenu}/>
-          <Switch>
-            <Route path="/home">
-              <HomePage />
-            </Route>
-            <Route path="/sign-in">
-              <SignInPage user={user} setUser={setUser}/>
-            </Route>
-            <Route path="/about">
-              <AboutPage />
-            </Route>
-            <Route path="/settings">
-              <SettingsPage />
-            </Route>
-            <Route path="/emergency">
-              <EmergencyPage />
-            </Route>
-            <Route path="/articles">
-              <ArticlesPage />
-            </Route>
-            <Redirect to="/home" />
-          </Switch>
-        </>
-        :
-        <>
-          <NavPage setNavMenu={setNavMenu}/>
-        </>
-        } 
-    </main>
+      <main className="App">
+        { navMenu ? 
+          <>
+            <NavBar setNavMenu={setNavMenu}/>
+            <Switch>
+              <Route path="/home">
+                <HomePage />
+              </Route>
+              <Route path="/sign-in">
+                <SignInPage user={user} setUser={setUser}/>
+              </Route>
+              <Route path="/about">
+                <AboutPage />
+              </Route>
+              <Route path="/settings">
+                <SettingsPage />
+              </Route>
+              <Route path="/emergency">
+                <EmergencyPage />
+              </Route>
+              <Route path="/articles">
+                <ArticlesPage />
+              </Route>
+              <Redirect to="/home" />
+            </Switch>
+          </>
+          :
+          <>
+            <NavPage setNavMenu={setNavMenu}/>
+          </>
+          } 
+      </main>
     </>
   );
 }

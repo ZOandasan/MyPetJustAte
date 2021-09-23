@@ -4,7 +4,7 @@ import EmergencyButton from "../../components/EmergencyButton/EmergencyButton";
 export default function NavPage({setNavMenu}){
     return (
         <>
-        <nav>
+        <nav className="nav-right">
             <button onClick={() => setNavMenu(true)}>X</button>
         </nav>
         <div>

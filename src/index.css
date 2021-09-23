@@ -190,8 +190,24 @@ a:visited {
   font-size: 5vmin;
 }
 
+.emergency:hover {
+  background-color: var(--error);
+  color: white;
+  font-size: 5vmin;
+}
+
 .food-card {
   background-color: var(--background-card);
   border: .1vmin solid var(--border);
   border-radius: 5vmin;
+}
+
+.nav-right{
+  align-content: right;
+  text-align: right;
+}
+
+.nav-left{
+  align-content: left;
+  text-align: left;
 }
