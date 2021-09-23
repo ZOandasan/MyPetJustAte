@@ -5,7 +5,7 @@ export default function NavPage({setNavMenu}){
     return (
         <>
         <nav className="nav-right">
-            <button onClick={() => setNavMenu(true)}>X</button>
+        <a onClick={() => setNavMenu(true)}><img src='https://www.drodd.com/images15/letter-x17.png' alt='X' width='40px' height='40px'></img></a>
         </nav>
         <div>
             <Link to="/home"><h2 onClick={() => setNavMenu(true)}>Home</h2></Link>
