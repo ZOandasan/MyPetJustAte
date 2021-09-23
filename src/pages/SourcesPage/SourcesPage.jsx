@@ -17,9 +17,16 @@ export default function SourcesPage(){
         getFood();
     }, []);
 
-    return( food ?
+    return( food && sources ?
         <>
-            <h1>Sources for: {food.ingredientName}</h1>
+            <h1>Is {food.ingredientName} Safe To Eat?</h1>
+            <h2>{food.safeToEat}</h2>
+            <div>
+                {sources[0].citeTitle}
+            </div>
+            <div>
+                {sources[1].citeTitle}
+            </div>
         </>
         :
         <>
