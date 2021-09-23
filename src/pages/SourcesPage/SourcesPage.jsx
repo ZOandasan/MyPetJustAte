@@ -1,6 +1,7 @@
 import {useState, useEffect} from 'react';
 import { useParams } from "react-router-dom";
 import * as ingredientsAPI from '../../utilities/ingredients-api';
+import SourcesComponent from '../../components/SourcesComponent/SourcesComponent'
 
 export default function SourcesPage(){
     const [sources, setSources] = useState();
@@ -21,12 +22,7 @@ export default function SourcesPage(){
         <>
             <h1>Is {food.ingredientName} Safe To Eat?</h1>
             <h2>{food.safeToEat}</h2>
-            <div>
-                {sources[0].citeTitle}
-            </div>
-            <div>
-                {sources[1].citeTitle}
-            </div>
+            <SourcesComponent sources={sources}/>
         </>
         :
         <>
