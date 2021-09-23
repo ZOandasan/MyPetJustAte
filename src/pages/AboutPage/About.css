@@ -1,4 +1,4 @@
-.about {
+.about{
     background-color: var(--background-card);
     border: .3vmin solid var(--border);
     border-radius: 5%;
@@ -14,6 +14,7 @@
     border: .1vmin solid var(--border);
     border-radius: 3%;
 }
+
     
 h1 {
     text-align: center;

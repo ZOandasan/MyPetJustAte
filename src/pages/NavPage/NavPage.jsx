@@ -7,14 +7,13 @@ export default function NavPage({setNavMenu}){
         <nav className="nav-right">
         <a onClick={() => setNavMenu(true)}><img src='https://www.drodd.com/images15/letter-x17.png' alt='X' width='40px' height='40px'></img></a>
         </nav>
-        <div>
-            <Link to="/home"><h2 onClick={() => setNavMenu(true)}>Home</h2></Link>
-            <br />
-            <Link to="/about"><h2 onClick={() => setNavMenu(true)}>About</h2></Link>
-            <br />
-            <Link to="/articles"><h2 onClick={() => setNavMenu(true)}>Articles</h2></Link>
-            <br />
-            <Link to="/settings"><h2 onClick={() => setNavMenu(true)}>Settings</h2></Link>
+        <div className="nav-container">
+            <ul className="spaced">
+                <li><Link to="/home"><h2 onClick={() => setNavMenu(true)}>Home</h2></Link></li>
+                <li><Link to="/about"><h2 onClick={() => setNavMenu(true)}>About</h2></Link></li>
+                <li><Link to="/articles"><h2 onClick={() => setNavMenu(true)}>Articles</h2></Link></li>
+                <li><Link to="/settings"><h2 onClick={() => setNavMenu(true)}>Settings</h2></Link></li>
+            </ul>
         </div>
         <footer>
             <EmergencyButton />

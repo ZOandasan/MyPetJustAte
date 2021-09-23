@@ -211,3 +211,24 @@ a:visited {
   align-content: left;
   text-align: left;
 }
+
+.nav-container{
+  border: 1px solid black;
+  height: 70vmin;
+  background-color: var(--background-card);
+}
+
+.spaced {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.spaced li {
+  height: 60px;
+  margin-left: 15px;
+  margin-right: 15px;
+}
