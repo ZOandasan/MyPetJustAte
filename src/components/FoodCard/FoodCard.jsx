@@ -26,7 +26,7 @@ export default function FoodCard({food, index}){
                 </Link>
                 </>
             )
-        } else if (food.safeToEat === 'Maybe') {
+        } else if (food.safeToEat === 'Depends') {
             return (
                 <>
                 <div className="food-card">
