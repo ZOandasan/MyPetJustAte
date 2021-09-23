@@ -1,0 +1,19 @@
+.articles-container {
+    display: flex;
+    flex-direction: column;
+}
+
+#rover {
+    background-image: url('https://i.imgur.com/hi3u9I6.png');
+}
+
+#fluentwoof {
+    background-image: url('https://i.imgur.com/MpUsNPE.jpg');
+}
+
+.article-card {
+    margin: 5px auto;
+    height: 350px;
+    width: 500px;
+    color: white;
+}
