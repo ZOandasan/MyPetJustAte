@@ -57,7 +57,7 @@ export default function EmergencyPage() {
         />
       </MapGL>
       <div className='call-title'>ASPCA Animal Poison Control Center hotline available 24 hours, 365 days a year.</div>
-      <button className='call-button'>Call Animal Poison Control Center Hotline</button>
+      <a href="tel:8884264435"><button className='call-button'>Call Animal Poison Control Center Hotline</button></a>
     </div>
   );
 };
