@@ -33,15 +33,8 @@ export default function HomePage({ setNavMenu }){
                 <div className='title'>Can my <br></br> dog eat this?</div>
                 <SearchFoodForm classname='search-component' foundFoods={foundFoods} setFoundFoods={setFoundFoods} search={search} setSearch={setSearch} setLastSearch={setLastSearch}/>
                 <EmergencyButton setNavMenu={setNavMenu}/>
-                <div>
-                    <span>
-                        <Link to="/about">About</Link>
-                        <span> | </span>
-                        <Link to="/articles">Articles</Link>
-                        <span> | </span>
-                        <Link to="/settings">Settings</Link>
-                    </span>
-                </div>
+                <br />
+                <p>Sources are linked in page.</p>
             </div>
         )
     } else {
