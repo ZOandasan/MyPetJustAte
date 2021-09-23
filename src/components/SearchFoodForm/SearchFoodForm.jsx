@@ -44,7 +44,7 @@ export default function SearchFoodForm({foundFoods, setFoundFoods, search, setSe
         <div className='search-container'>
                 <div classname='input-container'>
                     <form autoComplete="off" onSubmit={handleSubmit}>
-                    <input name="food" className='food-input' type="text" value={formData.food} onChange={handleChange} />
+                    <input name="food" className='food-input' type="text" placeholder="Type a food here." value={formData.food} onChange={handleChange} />
                     </form>
                 </div>
                 <div className='input-border'></div>
