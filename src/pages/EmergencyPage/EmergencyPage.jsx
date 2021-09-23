@@ -4,8 +4,13 @@ import './Emergency.css'
 import React, { useState, useRef, useCallback } from 'react'
 import MapGL from 'react-map-gl'
 import Geocoder from 'react-map-gl-geocoder'
+import mapboxgl from 'mapbox-gl'
+
 
 const MAPBOX_TOKEN = "pk.eyJ1IjoicmVpYnAiLCJhIjoiY2twbjRkNmtrMDUzaDJubGZpd2V2czlmdyJ9.CbflU85ZELStxRiiE_bW-A"
+// eslint-disable-next-line import/no-webpack-loader-syntax
+mapboxgl.workerClass = require('worker-loader!mapbox-gl/dist/mapbox-gl-csp-worker').default;
+
 
 export default function EmergencyPage() {
   const [viewport, setViewport] = useState({
