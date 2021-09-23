@@ -47,6 +47,7 @@ export default function SettingsPage(){
             <h1>Settings Page</h1>
             <div>
                 <p>Customize your experience. Keep your pup healthy in a stylish way.</p>
+                <br />
                 <div>
                     <a onClick={() => setLight()}>Beta Mode</a>
                 </div>
