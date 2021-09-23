@@ -20,7 +20,7 @@ export default function SourcesPage(){
 
     return( food && sources ?
         <>
-            <h1>Is {food.ingredientName} Safe To Eat?</h1>
+            <h1>(Is/Are) {food.ingredientName} Safe To Eat?</h1>
             <h2>{food.safeToEat}</h2>
             <SourcesComponent sources={sources}/>
         </>
