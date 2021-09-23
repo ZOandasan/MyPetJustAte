@@ -12,6 +12,7 @@ export default function AboutPage(){
             <div className='name'>Carlos Shows</div>
           </div>
           <div className='description'>Content Strategist / UX Designer</div>
+
         </div>
 
         <div className="profile">

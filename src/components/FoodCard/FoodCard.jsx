@@ -10,8 +10,9 @@ export default function FoodCard({food, index}){
                 <div className="food-card">
                     <h4>Safe to Eat</h4>
                 </div>
+                <br />
                 <Link to={`/sources/${food._id}`}>
-                    <button>Sources</button>
+                    <h4>Sources</h4>
                 </Link>
                 </>
             )
@@ -21,8 +22,9 @@ export default function FoodCard({food, index}){
                 <div className="food-card">
                     <h4>Do Not Eat</h4>
                 </div>
+                <br />
                 <Link to={`/sources/${food._id}`}>
-                    <button>Sources</button>
+                    <h4>Sources</h4>
                 </Link>
                 </>
             )
@@ -33,8 +35,9 @@ export default function FoodCard({food, index}){
                     <h4>Maybe. Look at Sources for more Info.</h4>
                     <span></span>
                 </div>
+                <br />
                 <Link to={`/sources/${food._id}`}>
-                    <button>Sources</button>
+                    <h4>Sources</h4>
                 </Link>
                 </>
             )
@@ -44,9 +47,6 @@ export default function FoodCard({food, index}){
                 <div className="food-card">
                     <h4>No Data Found</h4>
                 </div>
-                <Link to={`/sources/${food._id}`}>
-                    <button>Sources</button>
-                </Link>
                 </>
             )
         }
