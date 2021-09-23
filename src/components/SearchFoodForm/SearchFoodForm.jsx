@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-export default function SearchFoodForm({foundFoods, setFoundFoods, search, setSearch}){
+export default function SearchFoodForm({foundFoods, setFoundFoods, search, setSearch, setLastSearch}){
     const [formData, setFormData] = useState({
         pet: 'dog',
         food: '',
@@ -27,9 +27,11 @@ export default function SearchFoodForm({foundFoods, setFoundFoods, search, setSe
         }
         setSearch(search * -1);
         if (matchedItems.length > 0){
+            setLastSearch(formData.food);
             setFoundFoods(matchedItems);
         } else {
             console.log("No Matches Found");
+            setLastSearch(formData.food);
             setFoundFoods();
         }
         setFormData({

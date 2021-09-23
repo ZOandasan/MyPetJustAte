@@ -8,6 +8,7 @@ export default function HomePage(){
     const [allFoods, setAllFoods] = useState();
     const [foundFoods, setFoundFoods] = useState();
     const [search, setSearch] = useState(1);
+    const [lastSearch, setLastSearch] = useState();
     
     useEffect(function(){
         async function getIngredients() {
@@ -27,13 +28,13 @@ export default function HomePage(){
         return (
             <>
                 <h2>Can my dog eat this?</h2>
-                <SearchFoodForm foundFoods={foundFoods} setFoundFoods={setFoundFoods} search={search} setSearch={setSearch}/>
+                <SearchFoodForm foundFoods={foundFoods} setFoundFoods={setFoundFoods} search={search} setSearch={setSearch} setLastSearch={setLastSearch}/>
             </>
         )
     } else {
         return (
             <>
-                <h2>Can my dog eat this?</h2>
+                <h2>Can my dog eat {lastSearch}?</h2>
                 <br />
                 <div>
                     <FoundFoodsComponent foundFoods={foundFoods}/>
