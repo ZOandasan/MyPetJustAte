@@ -32,7 +32,6 @@ export default function HomePage({ setNavMenu }){
             <div className='home-container'>
                 <div className='title'>Can my <br></br> dog eat this?</div>
                 <SearchFoodForm classname='search-component' foundFoods={foundFoods} setFoundFoods={setFoundFoods} search={search} setSearch={setSearch} setLastSearch={setLastSearch}/>
-                <div className='emergency-description'>Have an emergency? Click below to connect to a care provider near you.</div>
                 <EmergencyButton setNavMenu={setNavMenu}/>
             </div>
         )

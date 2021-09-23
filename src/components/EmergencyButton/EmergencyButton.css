@@ -14,3 +14,10 @@
     background-color: #e08585;
     color: white;
   }
+
+  .emergency-description {
+    color: #A7A7A7;
+    border-top: 1px solid #A7A7A7;
+    margin-top: 48px;
+    padding-top: 16px;
+}
