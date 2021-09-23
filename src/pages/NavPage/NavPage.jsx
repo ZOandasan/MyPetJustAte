@@ -10,7 +10,7 @@ export default function NavPage({setNavMenu}){
         <div className="nav-container">
             <ul className="spaced">
                 <li><Link to="/home"><h2 onClick={() => setNavMenu(true)}>Home</h2></Link></li>
-                <li><Link to="/about"><h2 onClick={() => setNavMenu(true)}>About</h2></Link></li>
+                <li><Link to="/about"><h2 onClick={() => setNavMenu(true)}>Meet The Team</h2></Link></li>
                 <li><Link to="/articles"><h2 onClick={() => setNavMenu(true)}>Articles</h2></Link></li>
                 <li><Link to="/settings"><h2 onClick={() => setNavMenu(true)}>Settings</h2></Link></li>
             </ul>
