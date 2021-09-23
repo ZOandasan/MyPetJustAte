@@ -10,7 +10,7 @@ export default function FoodCard({food, index}){
                 <div className="food-card">
                     <h4>{food.ingredientName}: Safe to Eat</h4>
                 </div>
-                <SourcesComponent sources={food.citations}/>
+                <SourcesComponent food={food}/>
                 </>
             )
         } else if (food.safeToEat === 'No') {

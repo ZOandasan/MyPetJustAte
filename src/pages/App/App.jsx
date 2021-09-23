@@ -10,6 +10,7 @@ import SignInPage from '../SignInPage/SignInPage';
 import EmergencyPage from '../EmergencyPage/EmergencyPage';
 import NavPage from '../NavPage/NavPage';
 import ArticlesPage from '../ArticlesPage/ArticlesPage';
+import SourcesPage from '../SourcesPage/SourcesPage';
 
 export default function App() {
   const [user, setUser] = useState(getUser());
@@ -39,6 +40,9 @@ export default function App() {
               </Route>
               <Route path="/articles">
                 <ArticlesPage />
+              </Route>
+              <Route path="/sources/:id">
+                <SourcesPage />
               </Route>
               <Redirect to="/home" />
             </Switch>

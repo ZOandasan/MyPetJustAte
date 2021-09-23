@@ -2,8 +2,8 @@ import {useState, useEffect} from 'react';
 import { Link } from "react-router-dom";
 import SearchFoodForm from '../../components/SearchFoodForm/SearchFoodForm';
 import FoundFoodsComponent from '../../components/FoundFoodsComponent/FoundFoodsComponent';
-import * as ingredientsAPI from '../../utilities/ingredients-api';
 import EmergencyButton from '../../components/EmergencyButton/EmergencyButton';
+import * as ingredientsAPI from '../../utilities/ingredients-api';
 import './HomePage.css'
 
 

@@ -1,26 +1,21 @@
 import SourcesCard from "../SourcesCard/SourcesCard";
+import { Link } from "react-router-dom";
 
-export default function SourcesComponent({sources}){
 
-    const initSources = [];
-    sources.forEach(function (s, idx){
-        initSources.push(
-            <>
-            <span> </span>
-            <SourcesCard source={s} key={idx}/>
-            <span> </span>
-            </>
-        )
-    });
+export default function SourcesComponent({food}){
 
-    return (
+    console.log(food);
+
+    return ( food ?
         <>
             <br />
-            <>
-                {initSources.map((s, idx) => (
-                    <>{s}</>
-                ))}
-            </>
+            <Link to={`/sources/${food._id}`}>
+                <button>Sources</button>
+            </Link>
+        </>
+        :
+        <>
+            <br />
         </>
     );
 }
